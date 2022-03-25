@@ -97,9 +97,9 @@ if __name__ == "__main__":
     print(bws, OPTIMIZER, DIRECTED_EXACT)
 
     for worker in [4]:
-        for pout in [0.8, 0.5, 0.3]:
-            for eta in [4.0]:
-                for xi_target in [0.5]:
+        for pout in [0.5]:
+            for eta in [4.0, 3.0]:
+                for xi_target in [0.1, 0.3, 0.5, 0.7, 0.9]:
                     t = time.time()
                     for bw in bws:
                         result = Parallel(n_jobs=CORE, timeout=None)([delayed(dosim)(xi_target, eta, pout, worker, bw) for n in range(loop)])
