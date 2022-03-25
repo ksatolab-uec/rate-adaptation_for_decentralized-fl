@@ -4,9 +4,8 @@ os.environ["OMP_NUM_THREADS"] = "1"
 
 import numpy as np
 from func import *
-
-from joblib import Parallel, delayed
 import time
+from joblib import Parallel, delayed
 
 AREA = 500.0    #area length[m]
 CORE = 8        #number of CPU cores (for parallel computation)
@@ -19,8 +18,10 @@ AWGN_mW = 10.0**(AWGN*0.1)  #AWGN[mW/Hz]
 
 loop = 1000
 
-OPTIMIZER = "DIRECTED"  #brute-force search (equivalent to Alg.2)
-DIRECTED_EXACT = False  #False: equavalent to main proposed algorithm
+OPTIMIZER = "DIRECTED" 
+## "DIRECTED": brute-force search (equivalent to Alg.2)
+## "UNDIRECTED": assuming R_1=R_2=...=R_(ij) (used in Appendix)
+DIRECTED_EXACT = False #False: equavalent to main proposed algorithm
 
 def dosim(xi_target, eta, pout, worker, bw):
     '''gen node locations'''
