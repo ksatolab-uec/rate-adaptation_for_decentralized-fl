@@ -14,4 +14,4 @@ $python main.py
 
 The MIT License (MIT)
 
-Copyright (c) 2021 Koya SATO.
+Copyright (c) 2022 Koya SATO.
