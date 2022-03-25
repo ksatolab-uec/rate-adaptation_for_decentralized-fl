@@ -1,4 +1,4 @@
-# Implementation Example of Rate Adaptation Technique for Decentralized Federated Learning
+# Implementation Example of Rate Adaptation Algorithm for Decentralized Federated Learning
 * This code demonstrates the rate-adaptation algorithm proposed in the following paper:
   * Koya Sato and Daisuke Sugimura, "Rate-Adapted Decentralized Learning Over Wireless Networks," IEEE Trans. Cogn. Commun. Netw., vol.7, no.4, pp.1412-1429, Dec. 2021.
   * https://ieeexplore.ieee.org/document/9410554
