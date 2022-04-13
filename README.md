@@ -9,6 +9,9 @@
 $python main.py
 ```
 
+# Note
+This code does not contain the learning part.
+Please implement it with your favorite ML framework (e.g., PyTorch) if necessary.
 
 # License
 
